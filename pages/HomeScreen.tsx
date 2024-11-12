@@ -10,6 +10,7 @@ type RootStackParamList = {
   Formulaire: undefined;
   Crud: undefined;
   Camera: undefined;
+  AudioPlayer: undefined;
 };
 
 // Définir le type des props pour le composant HomeScreen
@@ -49,7 +50,7 @@ function HomeScreen({ navigation }: Props) {
 
           <TouchableOpacity
             style={styles.button}
-            onPress={() => navigation.navigate('Formulaire')}>
+            onPress={() => navigation.navigate('AudioPlayer')}>
             <Text style={styles.buttonText}>SONG</Text>
           </TouchableOpacity>
 
@@ -64,6 +65,9 @@ function HomeScreen({ navigation }: Props) {
             onPress={() => navigation.navigate('Formulaire')}>
             <Text style={styles.buttonText}>CLIENT-SERVER</Text>
           </TouchableOpacity>
+
+
+
         </View>
       </ScrollView>
     </SafeAreaView>
